@@ -3,16 +3,27 @@
  */
 public class Hero {
 
-  private  String name;
-  private  int strength;
+  public  Hero(String n, int a) {
+    name = n;
+    strength = a;
+  }
 
-  public static void main(String [ ] args){
+   String name;
+   int strength;
 
-    Hero firstHero = new Hero();
-    Hero secondHero = new Hero();
-    Hero thirdHero = new Hero();
+  public void jump(int strength) {
+
+
+      System.out.println("Jump " + strength + " times");
+
+  }
+    public static void main(String [ ] args){
+
+      Hero firstHero = new Hero("Super Hero", 10);
+      System.out.println(firstHero.name);
+      firstHero.jump(2);
+
+    }
 
   }
 
-
-}
