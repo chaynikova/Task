@@ -9,10 +9,14 @@ public class Weapon{
     wEfficiency = ef;
   }
 
-  String wName;
-  int wEfficiency;
+  private String wName;
+  private int wEfficiency;
 
- public String getName() {
+public void setwName(String name)
+{
+  this.wName = name;
+}
+ public String getwName() {
     return wName;
   }
 
