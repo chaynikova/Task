@@ -29,15 +29,13 @@ public class Start {
    // --- 3 ---
 	Hero thirdHero = new Hero("Super Sergio 3", 50, new Weapon("lazer", 100));
 
-  // --- battle heros---
+  // --- battle heroes---
+    Battle battle = new Battle();
 
     Hero battleHero1 = new Hero("Super Sergio", 100, new Weapon("lazer", 100));
     Hero battleHero2 = new Hero("Super Tanya", 50, new Weapon("axe", 50));
 
-    Battle battle = new Battle();
     battle.battle(battleHero1, battleHero2);
-
-
 
   }
 }
