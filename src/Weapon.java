@@ -3,29 +3,40 @@
  */
 public class Weapon{
 
-  public Weapon(String weaponName, int ef ){
+	private String name;
+	private int efficiency;
 
-    wName = weaponName;
-    wEfficiency = ef;
-  }
+	public Weapon(String name, int efficiency ){
+		this.name = name;
+		this.efficiency = efficiency;
+	}
 
-  private String wName;
-  private int wEfficiency;
+	// --- Getter & Setter for all fields ---
+	
+	public String getName(){
+		return name;
+	}
+	
+	public void setName(String name){
+		this.name = name;
+	}
+	
+	public int getEfficiency(){
+		return efficiency;
+	}
+	
+	public void setEfficiency(int efficiency){
+		this.efficiency = efficiency;
+	}
 
-public void setwName(String name)
-{
-  this.wName = name;
-}
- public String getwName() {
-    return wName;
-  }
+	// --- Actions ---
 
-  public void shoot(){
+	public void shoot(){
+		if (wEfficiency >= 5 ) {
+			System.out.println("He is using " + name + " weapon.");
+		} else {
+			System.out.println("He is using " + name + ".");
+		}
+	}
 
-    if   (wEfficiency >=5 ) {
-      System.out.println("He is using " + wName + " weapon.");
-    }
-    else
-      System.out.println("He is using " + wName + ".");
-  }
 }
