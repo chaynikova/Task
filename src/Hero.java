@@ -6,6 +6,11 @@ public class Hero  {
 	private String name;
 	private int strength;
 	private Weapon weapon;
+
+  public Hero()
+  {
+
+  }
   
 	public Hero(String name, int strength) {
 		this.name = name;
@@ -46,9 +51,13 @@ public class Hero  {
 
 	// --- Actions ---
 	
-	// Hero already has strength, not need to set it
-	public void jump() {
+		public void jump() {
       System.out.println("Jumps " + strength + " fast");
+  }
+
+  public void shoot(){
+
+    weapon.shoot();
   }
 }
 

@@ -5,6 +5,11 @@ public class Weapon{
 
 	private String name;
 	private int efficiency;
+  private Hero hero;
+
+  public Weapon(){
+
+  }
 
 	public Weapon(String name, int efficiency ){
 		this.name = name;
@@ -31,11 +36,11 @@ public class Weapon{
 
 	// --- Actions ---
 
-	public void shoot(){
-		if (wEfficiency >= 5 ) {
-			System.out.println("He is using " + name + " weapon.");
+	public  void shoot(){
+		if (efficiency >= 5 ) {
+			System.out.println( hero.getName() + " weapon.");
 		} else {
-			System.out.println("He is using " + name + ".");
+			System.out.println(hero.getName() + ".");
 		}
 	}
 

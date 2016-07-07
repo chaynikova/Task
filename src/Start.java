@@ -19,29 +19,24 @@ public class Start {
    firstHero.setWeapon(firstWeapon);
    
    firstHero.jump();
-   //firstHero.shoot(); // todo
-   firstWeapon.shoot();
+//  firstHero.shoot(); // todo
+//  firstWeapon.shoot();
    
    // --- 2 ---
 	Hero secondHero = new Hero("Super Sergio 2", 20);
 	Weapon secondWeapon = new Weapon("blaster", 150);
-	secondHero.secondWeapon(secondWeapon);
-   
+	secondHero.setWeapon(secondWeapon);
    // --- 3 ---
 	Hero thirdHero = new Hero("Super Sergio 3", 50, new Weapon("lazer", 100));
-  
-  
-  // Tatyana
-  
-    Hero firstHero = new Hero("Super Sergio", 10);
-    Weapon weapon1 = new Weapon ("unknown", 5);
-    Weapon weapon2 = new Weapon ("tennis ball", 3);
-    System.out.println(firstHero.name); // ?????????
-    firstHero.jump(2);
-   // weapon1.setwName("test");
-    weapon1.shoot();
-    firstHero.setWeapon(weapon2); 
-    System.out.println(firstHero.name + " can kill you by " + firstHero.getWeapon().getwName());
+
+  // --- battle heros---
+
+    Hero battleHero1 = new Hero("Super Sergio", 100, new Weapon("lazer", 100));
+    Hero battleHero2 = new Hero("Super Tanya", 50, new Weapon("axe", 50));
+
+    Battle battle = new Battle();
+    battle.battle(battleHero1, battleHero2);
+
 
 
   }
