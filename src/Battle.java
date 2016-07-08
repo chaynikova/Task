@@ -3,6 +3,10 @@
  */
 public class Battle {
 
+  Group girls = new Group();
+  Group guys = new Group();
+
+
   public void battle(Hero battleHero1, Hero battleHero2) {
 
     if (battleHero1.getWeapon().getEfficiency() > battleHero2.getWeapon().getEfficiency()) {
@@ -10,4 +14,17 @@ public class Battle {
     } else System.out.println(battleHero1.getName() + "is busy for battles today.");
   }
 
+  public void battle(Hero[] maleHeroes, Hero[] femaleHeroes) {
+
+    if (girls.femaleHeroes.length > guys.maleHeroes.length) {
+      System.out.println("Девочки победили, потому что девочек больше)");
+    } else System.out.println("Мальчики победили девочек, но это они зря.");
+  }
+
+  public void battle(Hero battleHero1, Hero[] femaleHeroes) {
+    if (battleHero1.getStrength() > girls.femaleHeroes.length){
+      System.out.println("Слишком сильный герой, победил толпу девчонок.");
+    }
+    else System.out.println("Ну, не смог.");
+  }
 }
