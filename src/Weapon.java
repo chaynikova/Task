@@ -5,7 +5,7 @@ public class Weapon{
 
 	private String name;
 	private int efficiency;
-  private Hero hero;
+
 
   public Weapon(){
 
@@ -15,6 +15,7 @@ public class Weapon{
 		this.name = name;
 		this.efficiency = efficiency;
 	}
+
 
 	// --- Getter & Setter for all fields ---
 	
@@ -30,15 +31,17 @@ public class Weapon{
 		return efficiency;
 	}
 	
-	public void setEfficiency(int efficiency){
-		this.efficiency = efficiency;
-	}
+	public void setEfficiency(int efficiency){this.efficiency = efficiency;	}
+
+
 
 	// --- Actions ---
 
-	public  void shoot(){
+	public void shoot(Hero hero){
 		if (efficiency >= 5 ) {
-			System.out.println( hero.getName() + " weapon.");
+
+			System.out.println();
+			System.out.println(hero.getName()+ " weapon.");
 		} else {
 			System.out.println(hero.getName() + ".");
 		}
