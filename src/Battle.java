@@ -30,10 +30,14 @@ public class Battle {
     else System.out.println("Ну, не смог.");
   }*/
 
-   public void battle(List<Hero> heroes, List<Hero> heroes2) {
+   public void battle(Group heroes, Group heroes2) {
 
-    if (heroes.size() >= heroes2.size()) {
-      System.out.println("heroes win");
-    } else System.out.println("heroes2 win.");
+    if (heroes.equals(heroes2)  ) {
+      System.out.println("draw");
+
+    } else if (heroes.getHeroes().size() > heroes2.getHeroes().size()){
+      System.out.println("heroes win.");
+    }
+      else System.out.println("heroes2 win.");
   }
 }

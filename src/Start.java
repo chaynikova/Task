@@ -41,17 +41,15 @@ public class Start {
 
     battle.battle(battleHero1, battleHero2);
 
-   // battle.battle(guys, girls);*/
+    //-----battle groups-----
 
-    List<Hero> heroes = new ArrayList<Hero>();
-    heroes.add(firstHero);
-    heroes.add(secondHero);
+    Group group = new Group();
+    Group group2 = new Group();
 
+    group.addHero(firstHero);
+    group.addHero(secondHero);
+    group2.addHero(battleHero1);
 
-    List<Hero> heroes2 = new ArrayList<Hero>();
-    heroes.add(battleHero1);
-    heroes.add(battleHero2);
-
-    battle.battle(heroes, heroes2);
+    battle.battle(group,group2);
   }
 }

@@ -7,5 +7,21 @@ import java.util.List;
 public class Group {
 
 
+  private List<Hero> heroes = new ArrayList<Hero>();
+
+  public List<Hero> getHeroes() {
+    return heroes;
+  }
+
+  public void setHeroes(List<Hero> heroes) {
+    this.heroes = heroes;
+  }
+
+  public void addHero(Hero hero)
+
+  {
+    heroes.add(hero);
+
+  }
 
 }
