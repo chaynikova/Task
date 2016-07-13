@@ -24,4 +24,10 @@ public class Group {
 
   }
 
+  @Override
+  public String toString() {
+    return "Group{" +
+            "heroes=" + heroes +
+            '}';
+  }
 }

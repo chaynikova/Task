@@ -22,6 +22,14 @@ public class Hero {
     this.weapon = weapon;
   }
 
+  @Override
+  public String toString() {
+    return "Hero{" +
+            "name='" + name + '\'' +
+            ", strength=" + strength +
+            ", weapon=" + weapon +
+            '}';
+  }
   // --- Getter & Setter for all fields ---
 
   public String getName() {
@@ -47,6 +55,7 @@ public class Hero {
   public void setWeapon(Weapon weapon) {
     this.weapon = weapon;
   }
+
 
   // --- Actions ---
 

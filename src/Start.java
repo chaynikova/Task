@@ -33,22 +33,18 @@ public class Start {
 
     // --- battle heroes---
     Battle battle = new Battle();
-    Hero[] girls = new Hero[4];
-    Hero[] guys = new Hero[10];
-
     Hero battleHero1 = new Hero("Super Sergio", 100, new Weapon("lazer", 100));
     Hero battleHero2 = new Hero("Super Tanya", 50, new Weapon("axe", 50));
-
     battle.battle(battleHero1, battleHero2);
 
     //-----battle groups-----
-
     Group group = new Group();
     Group group2 = new Group();
 
     group.addHero(firstHero);
     group.addHero(secondHero);
     group2.addHero(battleHero1);
+    System.out.println(group);
 
     battle.battle(group,group2);
   }
